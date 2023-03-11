@@ -1,56 +1,66 @@
-.navigation{
+.navigation {
     margin-left: 74%;
     display: flex;
     flex-direction: row;
 }
-.navigation .links{
+
+.navigation .links {
     margin-left: 5px;
     border-radius: 5px;
     color: black;
     background-color: rgb(241, 141, 9);
     text-decoration: none;
 }
-.navigation .links Button{
+
+.navigation .links Button {
     color: beige;
 }
-.navigation .links Button:hover{
+
+.navigation .links Button:hover {
     color: black;
 }
-.links{
+
+.links {
     text-decoration: none;
 }
- img{
+
+img {
     display: block;
-     max-width:50px;
-     max-height:30px;
-     scale:5;
-     aspect-ratio: auto;
-     padding-left: 20px;
+    max-width: 50px;
+    max-height: 30px;
+    scale: 5;
+    aspect-ratio: auto;
+    padding-left: 20px;
 }
-footer{
+
+footer {
     margin-top: 15px;
     padding: auto;
     height: 40px;
     text-align: center;
     background-color: rgb(241, 94, 9);
 }
-.images{
+
+.images {
     margin-top: 30px;
     margin-left: 30px;
 }
-.about{
+
+.about {
     margin: 20px;
-    padding: 10px; 
+    padding: 10px;
 }
-.about p{
-    text-align:justify ;
+
+.about p {
+    text-align: justify;
     margin: 15px;
     padding: 5px;
 }
-.forms{
-    border: 1px solid  rgb(197, 197, 190);
+
+.forms {
+    border: 1px solid rgb(197, 197, 190);
     border-radius: 10px;
-    padding: 20px; 
+    padding: 20px;
     align-items: center;
     margin: 10px;
     height: 15%;
@@ -58,13 +68,14 @@ footer{
     align-items: center;
     background-color: #e08a58;
 }
-.form .heading{
+
+.form .heading {
     font-weight: 800;
     font-size: large;
     color: rgb(248, 248, 215);
 }
 
-.forms .field{
+.forms .field {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -72,18 +83,22 @@ footer{
     background-color: rgb(243, 243, 234);
     margin: 5px;
     cursor: pointer;
-    
+
 }
-.gridsystem{
+
+.gridsystem {
     margin-top: 10px;
-    
+
 }
-.gridsystem .grids{
+
+.gridsystem .grids {
     background-color: #eecab3;
 }
-.gridsystem .description{
+
+.gridsystem .description {
     text-align: justify;
 }
-.images .category .button{
+
+.images .category .button {
     margin-right: 10px;
 }

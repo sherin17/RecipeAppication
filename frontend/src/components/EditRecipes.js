@@ -5,7 +5,7 @@ import "./style.css"
 import axios from 'axios'
 const EditRecipes = (props) => {
   console.log(props)
- 
+
   const [newrecipes, setnewrecipes] = useState({
     RecipeName: props.value.RecipeName,
     Duration_for_cooking: props.value.Duration_for_cooking,
@@ -33,7 +33,7 @@ const EditRecipes = (props) => {
 
   return (
     <div>
-        <div className='forms'>
+      <div className='forms'>
         <Typography className='heading' color='white'>EDIT RECIPES</Typography>
         <TextField name='RecipeName' value={newrecipes.RecipeName} onChange={inputHandler}
           variant='outlined' color='secondary' label='Recipes Name' className='field'></TextField>
@@ -48,9 +48,9 @@ const EditRecipes = (props) => {
         <TextField name='Descriptions' value={newrecipes.Descriptions} onChange={inputHandler}
           variant='outlined' color='secondary' label='Description' className='field'
           multiline rows={4}></TextField>
-          <br></br>
+        <br></br>
         <Button variant='contained' color='warning' onClick={readValues}>Update</Button>
-        
+
       </div>
     </div>
   )

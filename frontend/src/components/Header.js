@@ -9,7 +9,7 @@ const Header = () => {
         <AppBar position='static' color='warning'>
           <Toolbar>
             <a class="navbar-brand" href="#">
-              <img src='cheflogo.png'/>
+              <img src='cheflogo.png' />
             </a>
             <div className='navigation'>
               <Link to="/" className='links'><Button >Home</Button></Link>
