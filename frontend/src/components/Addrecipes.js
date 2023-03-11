@@ -21,7 +21,7 @@ const Addrecipes = () => {
       .then((response) => {
         console.log(response.data);
         alert("Data Added Successfully")
-        navigate("/");
+        navigate("/Recipes");
       })
   }
   return (
