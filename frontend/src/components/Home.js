@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.css'
-import { Card } from '@mui/material'
+import { Button, Card } from '@mui/material'
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import axios from 'axios'
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import Person3Icon from '@mui/icons-material/Person3';
+import Paper from '@mui/material/Paper';
+import { experimentalStyled as styled } from '@mui/material/styles';
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
 const Home = () => {
+
   return (
     <div className='images'>
       <Card variant="outlined" className='about'>
@@ -52,8 +71,9 @@ dishes have their origins in the Indian subcontinent, with present-day
  Armenia mainly using a meat base, while those in India and Southeast Asia 
  generally use vegetarian foundation.
         </p>
-      </Card>
+  </Card>
     </div>
+
   )
 }
 

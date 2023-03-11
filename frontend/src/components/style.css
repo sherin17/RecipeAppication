@@ -1,5 +1,5 @@
 .navigation{
-    margin-left: 70%;
+    margin-left: 74%;
     display: flex;
     flex-direction: row;
 }
@@ -32,7 +32,7 @@ footer{
     padding: auto;
     height: 40px;
     text-align: center;
-    background-color: rgb(241, 141, 9);
+    background-color: rgb(241, 94, 9);
 }
 .images{
     margin-top: 30px;
@@ -83,4 +83,7 @@ footer{
 }
 .gridsystem .description{
     text-align: justify;
+}
+.images .category .button{
+    margin-right: 10px;
 }

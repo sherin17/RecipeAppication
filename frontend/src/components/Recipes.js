@@ -14,8 +14,6 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Person3Icon from '@mui/icons-material/Person3';
 import EditReceipes from "./EditRecipes";
 import "./style.css"
-import UseForm from './UseForm'
-import { TextField } from '@mui/material';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -33,16 +31,8 @@ const IndiaRecipes = () => {
   var [editrecipes, seteditrecipes] = useState('')
   var editedrecipes
 
-  var [recipe, setRecipe] = UseForm({ "Category": "" });
   var [result, setResult] = useState([]);
 
-  const searchReceipe = () => {
-    axios.post("http://localhost:5000/api/search", recipes)
-      .then((response) => {
-        console.log(response.data)
-        setResult(result = response.data);
-      })
-  }
   // VIEW COURSE
   useEffect(() => {
     fetchrecipes()
@@ -81,8 +71,8 @@ const IndiaRecipes = () => {
 
 
       <div className='gridsystem'>
-        
-        
+
+
         <Box sx={{ flexGrow: 2 }} >
           <Grid container spacing={{ xs: 3, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} >
             {
@@ -99,14 +89,17 @@ const IndiaRecipes = () => {
                         <Person3Icon />
                         {value.Number_of_Servings}
                       </Typography><br></br>
-                       <Typography variant="body2" color="text.secondary" multiline rows={4} className='description'>
-  { value.Descriptions }
+                      <Typography variant="body2" color="text.secondary" multiline rows={4} className='description'>Category :
+                        {value.Category}
+                      </Typography >
+                      <Typography variant="body2" color="text.secondary" multiline rows={4} className='description'>
+                        {value.Descriptions}
                       </Typography >
                     </CardContent >
-  <CardActions>
-    <Button size="small" variant='contained' onClick={() => updaterecipes(value)}>Edit</Button>
-    <Button size="small" variant='contained' color='error' onClick={() => { deleterecipes(value._id) }}>Delete</Button>
-  </CardActions>
+                    <CardActions>
+                      <Button size="small" variant='contained' onClick={() => updaterecipes(value)}>Edit</Button>
+                      <Button size="small" variant='contained' color='error' onClick={() => { deleterecipes(value._id) }}>Delete</Button>
+                    </CardActions>
                   </Card ></Item >
                 </Grid >
               ))}
